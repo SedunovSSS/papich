@@ -1,0 +1,145 @@
+@media screen{
+    #outer { 
+        width: screen width - 40; 
+    }
+    #inner {
+        text-align: center;
+        width: 450px; margin: 1% auto;
+        font-weight: bold;
+        border-radius: 10px;
+        border: 2px solid #00ff55;
+    }
+}
+#head{
+    margin-top: 12px;
+}
+button{
+    cursor: pointer;
+}
+.inline_div{
+    display: flex;
+}
+#papich{
+    width: 256px;
+    height: 256px;
+    border-radius: 24px;
+}
+#balance{
+    font-size: 48px;
+    color: #00ff55;
+    float: right;
+    margin-top: 128px;
+    margin-right: 12px;
+}
+canvas{
+    width: 98%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 12px;
+    border: 1px solid black;
+}
+#items{
+    margin-top: 24px;
+    margin-bottom: 24px;
+    height: 300px;
+    overflow-y: scroll;
+}
+.item{
+    display: flex;
+    width: 98%;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 24px;
+}
+.item img{
+    width: 128px;
+    height: 128px;
+    border-radius: 12px;
+}
+.item .item-data{
+    margin-left: 64px;
+    display: block;
+    font-size: 24px;
+    width: 128px;
+}
+.item .item-data .item-price{
+    color: #00ff55;
+}
+.item .item-data button{
+    width: 36px;
+    height: 36px;
+    background-color: white;
+    border: 1px solid black;
+    font-size: 24px;
+    transition: all 0.25s;
+    margin-right: 6px;
+    margin-left: 6px;
+}
+.item .item-data button:hover{
+    color: white;
+    background-color: black;
+    border: 1px solid black;
+    font-size: 24px;
+}
+
+#buy{
+    width: 98%;
+    height: 45px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 12px;
+    margin-bottom: 12px;
+    background-color: #00ff55;
+    color: white;
+    border: none;
+    font-size: 24px;
+    border-radius: 12px;
+    transition: all 0.25s;
+}
+#buy:hover{
+    background-color: #00ff88;
+}
+.modal {
+  display: none; 
+  position: fixed; 
+  z-index: 1; 
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%;
+  overflow: auto; 
+  text-align: center;
+  background-color: rgba(0, 255, 85, 0.1);
+}
+.modal-content {
+    background-color: rgb(245, 245, 245);
+  margin: 2% auto;
+  padding: 20px;
+  width: 90%;
+  height: 80%;
+  border-radius: 24px;
+  text-align: left;
+}
+.modal-content li{
+    font-size: 36px;
+}
+.close {
+  color: #00ff55;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+.close:hover,
+.close:focus {
+  color: #00ff88;
+  text-decoration: none;
+  cursor: pointer;
+}
+.suckcess{
+    color: #00ff55;
+}
+.eRRor{
+    color: red;
+}
