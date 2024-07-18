@@ -59,7 +59,7 @@ items.push(item7);
 
 function update(){
     document.querySelector('#items').replaceChildren();
-    ctx.clearRect(0, 0, width, height)
+    ctx.clearRect(0, 0, width, height);
     ctx.fillStyle = '#00ff55';
     ctx.fillRect(0, 0, width*mood/100, height);
 
@@ -130,14 +130,14 @@ function update(){
         item_div.appendChild(item_img);
         item_div.appendChild(item_data_div);
 
-        document.querySelector('#items').appendChild(item_div)
+        document.querySelector('#items').appendChild(item_div);
     }
 }
 
 update();
 
 let modal = document.querySelector('#myModal');
-let buy = document.querySelector('#buy')
+let buy = document.querySelector('#buy');
 let span = document.getElementsByClassName("close")[0];
 
 buy.onclick = function() {
@@ -156,18 +156,18 @@ buy.onclick = function() {
     let item = items[i];
     if (item.count > 0){
         let li = document.createElement('li');
-        let str = '"' + item.name + '"' + ' - ' + item.count.toString() + ' штук,'
-        li.innerHTML = str
+        let str = '"' + item.name + '"' + ' - ' + item.count.toString() + ' штук,';
+        li.innerHTML = str;
         ul.appendChild(li);
     }
   }
   let result = document.createElement('h1');
   if (mood >= 100 & balance <= 100){
-    result.innerHTML = 'Вы смогли правильно потратить деньги Папича.'
+    result.innerHTML = 'Вы смогли правильно потратить деньги Папича.';
     result.className = 'suckcess';
   }
   else{
-    result.innerHTML = 'Вы не смогли правильно потратить деньги Папича. Вам даст пиздов 1вин и будт прав'
+    result.innerHTML = 'Вы не смогли правильно потратить деньги Папича. Вам даст пиздов 1вин и будт прав';
     result.className = 'eRRor';
   }
   modal_content.appendChild(close);
