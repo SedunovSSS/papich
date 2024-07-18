@@ -173,7 +173,7 @@ buy.onclick = function() {
   modal_content.appendChild(close);
   modal_content.appendChild(h1);
   modal_content.appendChild(ul);
-  modal_content.appendChild(result)
+  modal_content.appendChild(result);
   modal.style.display = "block";
 }
 
